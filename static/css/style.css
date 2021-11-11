@@ -1,0 +1,264 @@
+:root {
+  --basecolor: #0269a4;
+}
+
+html {
+  font-family:
+    'Open Sans',
+    'Helvetica',
+    sans-serif;
+}
+
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: .2em;
+  line-height: 1.5em;
+}
+
+h1 {
+  line-height: 1.5em;
+}
+
+a {
+  color: var(--basecolor);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  hyphens: auto;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7em;
+  display: block;
+  font-size: 1.1em;
+}
+
+div.home-wrapper {
+  text-align: center;
+  hyphens: none;
+}
+
+hr {
+  border-color: var(--basecolor);
+  width: 100%;
+}
+
+/* Table of contents */
+
+#TableOfContents, #TOC {
+  max-width: 95%;
+  margin: auto;
+  border: 1px solid var(--basecolor);
+}
+
+/* Titles */
+
+.article-meta, .menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.terms { 
+  font-size: .9em; 
+}
+
+.menu, .article-meta, footer { 
+  text-align: center; 
+}
+
+.title { 
+  font-size: 1.1em; 
+}
+
+/* Header and Footer */
+
+header {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  background: var(--basecolor);
+  border-bottom: 2px solid #000;
+}
+
+header nav {
+  padding: 0 0.5rem;
+}
+
+header ul, header ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  color: #fff;
+  line-height: 1.75rem;
+  padding: 0 0.5rem
+}
+
+header .current a {
+  font-weight: 800;
+}
+
+footer { 
+  width: 100%;
+  font-size: 80%;
+}
+
+/* Code Boxes */
+
+code:not([class]) {
+  font-family:
+    Courier New,
+    monospace;
+  font-size: 100%;
+  padding: 2px;
+  background: #eee;
+  overflow-x: auto;
+}
+
+/* highlight.js */
+
+div.highlight pre {
+  border: 1px solid var(--basecolor);
+  box-shadow: 2px 2px 2px var(--basecolor);=
+  background: #eee;
+  overflow-x: auto;
+}
+
+pre code {
+  font-family:
+    Courier New,
+    monospace;
+  font-size: 100%;
+  padding: 2px;
+}
+
+/* Images, tables, misc. */
+
+img, iframe, video {
+  max-width: 95%;
+  padding: 0.5em 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[src$='#left']
+{
+  max-width: 40%;
+  padding: 0.5em 2% 0 0;
+  float:left;
+}
+
+img[src$='#leftsmall']
+{
+  max-width: 25%;
+  padding: 0.5em 2% 0 0;
+  float:left;
+}
+
+img[src$='#leftlarge']
+{
+  max-width: 60%;
+  padding: 0.5em 2% 0 0;
+  float:left;
+}
+
+img[src$='#right']
+{
+  max-width: 40%;
+  padding: 0.5em 0 0 2%;
+  float:right;
+}
+
+img[src$='#rightsmall']
+{
+  max-width: 25%;
+  padding: 0.5em 0 0 2%;
+  float:right;
+}
+
+figure {
+  max-width: 95%;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+figcaption {
+  text-align: justify;
+  font-size: 85%;
+  line-height: 1.5rem;
+}
+
+figure img {
+  max-width: 100%;
+  padding: 0;
+  margin: auto;
+}
+
+figure.center {
+  padding: 0.5em 0 0 2%;
+  float:center;
+}
+
+figure.right {
+  max-width: 50%;
+  padding: 0.5em 0 0 2%;
+  float:right;
+}
+
+figure.rightsmall {
+  max-width: 35%;
+  padding: 0.5em 0 0 2%;
+  float:right;
+}
+
+figure.left {
+  max-width: 50%;
+  padding: 0.5em 2% 0 0;
+  float:left;
+}
+
+figure.leftsmall {
+  max-width: 35%;
+  padding: 0.5em 2% 0 0;
+  float:left;
+}
+
+blockquote {
+  background: #eee;
+  border-left: 5px solid var(--basecolor);
+  padding: 3px 1em 3px;
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid var(--basecolor);
+  border-bottom: 1px solid var(--basecolor);
+}
+
+table thead th { 
+  border-bottom: 1px solid var(--basecolor); 
+}
+
+th, td { 
+  padding: 5px; 
+}
+
+tr:nth-child(even) {
+  background: #eee
+}
+

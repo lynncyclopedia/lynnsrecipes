@@ -1,0 +1,30 @@
+baseurl = "https://lynns.recipes/"
+languageCode = "en-us"
+title = "Lynn's Recipes"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+enableEmoji = true
+enableGitInfo = true
+footnoteReturnLinkContents = "↩"
+googleAnalytics = ""
+
+[permalinks]
+    recipe = "/recipe/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About Me"
+    url = "/about/"
+    weight = 1
+    
+[[menu.main]]
+    name = "Recipes"
+    url = "/recipe/"
+    weight = 2
+
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+[params]
+    description = "Recipe blog by Lynn Whiteley"
+    footer = "Copyright 2021 Lynn Whiteley"
