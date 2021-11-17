@@ -8,7 +8,7 @@ footnoteReturnLinkContents = "↩"
 googleAnalytics = ""
 
 [permalinks]
-    recipe = "/recipe/:year/:month/:day/:slug/"
+    recipe = "/recipe/:slug/"
 
 [[menu.main]]
     name = "About Me"
