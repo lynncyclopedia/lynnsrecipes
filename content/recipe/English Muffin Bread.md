@@ -20,7 +20,7 @@ draft: true
 - 1 tbs sugar
 - 2 tsp salt
 - 1/4 tsp baking soda
-- 2 packages Rapid Rise Yeast
+- 2 packages (4 1/2 tsp) Rapid Rise Yeast 
 - 2 c milk
 - 1/2 c water
 - Cornmeal
