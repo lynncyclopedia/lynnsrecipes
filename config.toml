@@ -1,4 +1,4 @@
-baseurl = "https://lynns.recipes/"
+baseurl = "https://recipes.lynnwhiteley.com/"
 languageCode = "en-us"
 title = "Lynn's Recipes"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
