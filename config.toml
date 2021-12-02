@@ -34,3 +34,4 @@ googleAnalytics = ""
 [params]
     description = "Recipe blog by Lynn Whiteley"
     footer = "Copyright 2021 Lynn Whiteley"
+    front_categories = ["chicken", "meatless", "pork", "steak"]
