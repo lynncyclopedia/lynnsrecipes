@@ -7,6 +7,12 @@ enableGitInfo = true
 footnoteReturnLinkContents = "↩"
 googleAnalytics = ""
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+    category = "categories"
+
 [permalinks]
     recipe = "/recipe/:slug/"
 

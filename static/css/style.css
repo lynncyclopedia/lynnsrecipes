@@ -101,6 +101,11 @@ header li {
   display: inline-block;
 }
 
+header li.searchbar {
+  float:right;
+  padding: 2px;
+}
+
 header a {
   color: #fff;
   line-height: 1.75rem;
