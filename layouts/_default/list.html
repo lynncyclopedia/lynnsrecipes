@@ -16,7 +16,7 @@
             {{ if in site.Params.front_categories $name }}
                 <h2><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</h2>
                 <ul>
-                {{ range $items.Pages.ByLastmod.Reverse }}
+                {{ range first 5 $items.Pages.ByLastmod.Reverse }}
                     <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
                 {{ end }}
                 </ul>
@@ -25,8 +25,8 @@
         
       {{ else }} 
       <ul>
-        {{ $pages := .Pages }}
-        {{ range sort (where $pages "Section" "!=" "") -}}
+        {{ $pages := .Pages.ByTitle }}
+        {{ range (where $pages "Section" "!=" "") -}}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
         </li>
