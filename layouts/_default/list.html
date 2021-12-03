@@ -10,16 +10,29 @@
 {{ .Content -}}
 {{ end -}}
 </main>
-      {{ if .IsHome }}<hr/> <h2>Recipes</h2>{{ end }}
+      {{ if .IsHome }}
+
+        {{ range $name, $items := .Site.Taxonomies.categories }}
+            {{ if in site.Params.front_categories $name }}
+                <h2><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</h2>
+                <ul>
+                {{ range first 5 $items.Pages.ByLastmod.Reverse }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                {{ end }}
+                </ul>
+            {{ end }}
+        {{ end }}
+        
+      {{ else }} 
       <ul>
-        {{ $pages := .Pages }}{{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end -}}
+        {{ $pages := .Pages.ByTitle }}
         {{ range (where $pages "Section" "!=" "") -}}
         <li>
-          <span class="date">{{ .Date.Format "2006/01/02" }}</span>
           <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
         </li>
         {{ end -}}
       </ul>
+      {{ end }}
     </div>
 
 {{ partial "footer.html" . -}}

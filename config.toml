@@ -7,6 +7,12 @@ enableGitInfo = true
 footnoteReturnLinkContents = "↩"
 googleAnalytics = ""
 
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+    category = "categories"
+
 [permalinks]
     recipe = "/recipe/:slug/"
 
@@ -28,3 +34,4 @@ googleAnalytics = ""
 [params]
     description = "Recipe blog by Lynn Whiteley"
     footer = "Copyright 2021 Lynn Whiteley"
+    front_categories = ["chicken", "meatless", "pork", "steak"]
