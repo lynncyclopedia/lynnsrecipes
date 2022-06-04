@@ -35,7 +35,7 @@ draft: true
 
 
 ## Tools
-- 2 large mixing bowls
+- Large bowl
 - 2 shallow dishes for breading
 - Frying setup (dutch oven with thermometer, small countertop frier, etc)
 - Baking rack 
